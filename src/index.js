@@ -1,13 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import AnimatedRoutes from './components/AnimatedRoutes';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <AnimatedRoutes/>
+    </Router>
   </React.StrictMode>
 );
 
