@@ -26,7 +26,7 @@ const Hire = ({ darkMode }) => {
         transition={{duration:1,ease:'easeOut'}}
           className={` ${
             darkMode ? "text-white" : "text-black"
-          } tracking-wider text-5xl`}
+          } tracking-widest md:text-5xl text-4xl w-[90%] text-center `}
         >
           HIRE ME
         </motion.div>

@@ -20,7 +20,7 @@ function App() {
   return (
     <>
     <Navbar darkMode={darkMode} setDarkmode={setDarkmode} />
-        <Hero darkMode={darkMode} />
+        <Hero darkMode={darkMode}  />
         <About darkMode={darkMode} />
         <Skills darkMode={darkMode}/>
         <Tools darkMode={darkMode} />

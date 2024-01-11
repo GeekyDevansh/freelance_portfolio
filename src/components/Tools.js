@@ -51,68 +51,68 @@ const Tools = ({ darkMode }) => {
         transition={{duration:1,ease:'easeOut'}}
           className={` ${
             darkMode ? "text-white" : "text-black"
-          } tracking-wider text-5xl`}
+          } tracking-widest text-5xl w-[90%] text-center`}
         >
           TOOLS I USE
         </motion.div>
-        <div className={`md:w-1/3 w-[60%] mt-12 ${darkMode?"text-white":"text-black"} `}>
+        <div className={`md:w-1/3 w-[70%] md:mt-12 mt-16 ${darkMode?"text-white":"text-black"} `}>
           <Slider {...settings2}>
             <div>
-              <div className="md:md:text-8xl text-5xl">
+              <div className="md:md:text-8xl text-6xl">
                 <SiWoocommerce />
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="md:text-8xl text-5xl">
+              <div className="md:text-8xl text-6xl">
                 <FaShopify />
               </div>
             </div>
             <div>
-              <h3 className="md:text-8xl text-5xl">
+              <h3 className="md:text-8xl text-6xl">
                 <FaWix />
               </h3>
             </div>
             <div>
-              <h3 className="md:text-8xl text-5xl">
+              <h3 className="md:text-8xl text-6xl">
                 <FaWordpress />
               </h3>
             </div>
           </Slider>
         </div>
-        <div className={`md:w-1/2 w-[80%] md:my-12 my-6 ${darkMode?"text-white":"text-black"} `}>
+        <div className={`md:w-1/2 w-[90%] md:my-12 my-10 ${darkMode?"text-white":"text-black"} `}>
           <Slider {...settings}>
             <div>
-              <div className="md:text-8xl text-5xl">
+              <div className="md:text-8xl text-6xl">
                 <TiHtml5 />
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="md:text-8xl text-5xl">
+              <div className="md:text-8xl text-6xl">
                 <DiNodejs />
               </div>
             </div>
             <div>
-              <h3 className="md:text-8xl text-5xl">
+              <h3 className="md:text-8xl text-6xl">
                 <SiMysql />
               </h3>
             </div>
             <div>
-              <h3 className="md:text-8xl text-5xl">
+              <h3 className="md:text-8xl text-6xl">
               <FaAws />
               </h3>
             </div>
             <div>
-              <h3 className="md:text-8xl text-5xl">
+              <h3 className="md:text-8xl text-6xl">
                 <FaReact />
               </h3>
             </div>
             <div>
-              <h3 className="md:text-8xl text-5xl">
+              <h3 className="md:text-8xl text-6xl">
                 <IoLogoJavascript />
               </h3>
             </div>
             <div>
-              <div className="md:text-8xl text-5xl ">
+              <div className="md:text-8xl text-6xl ">
                 <TiCss3 />
               </div>
             </div>

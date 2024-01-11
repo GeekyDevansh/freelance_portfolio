@@ -4,13 +4,14 @@ import {motion} from 'framer-motion';
 const About = ({darkMode}) => {
   return (
     <>
-    <div className={` ${darkMode?"bg-black":"bg-white"} flex flex-col justify-center items-center `}>
+    <div className={` ${darkMode?"bg-black":"bg-white"} flex flex-col justify-center items-center  `}>
+    
 
-    <motion.div  initial={{y:"80%"}}
+    <motion.span  initial={{y:"80%"}}
         whileInView={{y:0}}
-        transition={{duration:1,ease:'easeOut'}} className={` ${darkMode?"text-white":"text-black"} tracking-wider md:text-5xl text-4xl`} >
+        transition={{duration:1,ease:'easeOut'}} className={` ${darkMode?"text-white":"text-black"} tracking-widest md:text-5xl text-4xl w-[90%] text-center`} >
         A LITTLE ABOUT ME
-    </motion.div>
+    </motion.span>
     <div className=''>
     <section class="text-gray-600 body-font">
   <div class="container px-5 py-12 mx-auto flex flex-wrap">
@@ -22,7 +23,7 @@ const About = ({darkMode}) => {
       <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
         <motion.div  initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0 w-24 h-24 text-gray-900 rounded-full inline-flex items-center justify-center">
+        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0  md:w-24 md:h-24 w-20 h-20 text-gray-900 rounded-full inline-flex items-center justify-center">
        {darkMode?<img src="/darkComputer.svg" alt="" />:<img src="/computer.svg" alt="" />}
         </motion.div>
         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -43,7 +44,7 @@ const About = ({darkMode}) => {
       <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
         <motion.div  initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0 w-24 h-24 rounded-full inline-flex items-center justify-center">
+        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0   md:w-24 md:h-24 w-20 h-20 rounded-full inline-flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M118.147 24.542 100.865 7.261c-14.302 5.559-32.461 14.922-47.679 30.14a232.209 232.209 0 0 0-7.042 7.351c-6.99 7.583-13.064 15.179-18.03 22.389l30.153 30.153c9.544-6.577 19.745-15.076 29.74-25.071 15.218-15.219 24.582-33.378 30.14-47.681zM82.204 43.204c-5.223-5.223-5.236-13.696-.013-18.919s13.709-5.223 18.932 0 5.21 13.696-.013 18.92-13.683 5.222-18.906-.001zM125.408 0s-7.686 1.315-18.881 5.184l13.696 13.696C124.092 7.686 125.408 0 125.408 0zM98.743 40.834c-3.915 3.915-10.257 3.915-14.172 0s-3.925-10.267-.01-14.182c3.915-3.915 10.276-3.915 14.192 0s3.906 10.266-.01 14.182zM2.592 67.205l29.456-29.456 11.762 4.669c-6.99 7.583-13.064 15.179-18.03 22.389L2.592 67.205zm57.967 32.379c7.209-4.965 14.805-11.04 22.389-18.03l4.669 11.762-29.457 29.457 2.399-23.189zM24.491 128l-3.869-3.869L50.5 94.253l3.869 3.869L24.491 128zM7.725 111.234l-3.869-3.869 29.878-29.878 3.869 3.869-29.878 29.878zm20.419-4.943-3.869-3.869 17.196-17.196 3.869 3.869-17.196 17.196zM13.958 92.105l-3.869-3.869L27.285 71.04l3.869 3.869-17.196 17.196z" fill={`${darkMode?"#ffffff":"#000000"}`}/></svg>
         </motion.div>
         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -64,7 +65,7 @@ const About = ({darkMode}) => {
       <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
         <motion.div  initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0 w-24 h-24 bg-opacity-50 text-gray-900 rounded-full inline-flex items-center justify-center">
+        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0   md:w-24 md:h-24 w-20 h-20 bg-opacity-50 text-gray-900 rounded-full inline-flex items-center justify-center">
           {darkMode?<img src="/darkGlobe.svg" alt="" />:<img src="/globe.svg" alt="" />}
         </motion.div>
         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -85,7 +86,7 @@ const About = ({darkMode}) => {
       <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
         <motion.div  initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0 w-24 h-24 text-gray-900 rounded-full inline-flex items-center justify-center">
+        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0   md:w-24 md:h-24 w-20 h-20 text-gray-900 rounded-full inline-flex items-center justify-center">
         {darkMode?<img src="/darkGraph.svg" alt="" />:<img src="/graph.svg" alt="" />}
         </motion.div>
         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
