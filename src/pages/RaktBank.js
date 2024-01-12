@@ -179,13 +179,13 @@ const RaktBank = ({darkMode}) => {
 
     <div className="my-16 font-arsenica font-semibold text-xl flex justify-center items-center" >
 
-    <div
-          className="font-dmsans font-medium text-lg border-2 border-black active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#000000] px-4 py-2 shadow-[6px_6px_0_#000000] cursor-pointer " onClick={()=>Navigate('/')}
+    <a
+          className="font-dmsans font-medium text-lg border-2 border-black active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#000000] px-4 py-2 shadow-[6px_6px_0_#000000] cursor-pointer " href="/"
         >
           <button className="flex items-center">
             <IoIosArrowBack className="mr-2" /> Go back home
           </button>
-        </div>
+        </a>
 
     </div>
     <Scroll/>

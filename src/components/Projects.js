@@ -56,13 +56,13 @@ const Projects = ({darkMode}) => {
   </AutoplaySlider>
     </motion.div>
         <div className={`flex flex-wrap md:flex-nowrap justify-center items-center md:gap-4 gap-2 font-arsenica font-semibold md:text-xl mb-12 ${darkMode?"text-white":"text-black"} w-[90%] `} >
-            <div className='hover:underline underline-offset-8 cursor-pointer' onClick={()=>navigate("/matchmyservice")} >MatchMyService</div>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className='hover:underline underline-offset-8 cursor-pointer' href='/matchmyservice' target='_blank' rel='noreferrer noopener' >MatchMyService</motion.a>
             <div className='text-2xl' >&#183;</div>
-            <div className='hover:underline underline-offset-8 cursor-pointer' onClick={()=>navigate("/vkiwitech")} >vKiwiTech</div>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className='hover:underline underline-offset-8 cursor-pointer' href='/vkiwitech' target='_blank' rel='noreferrer noopener' >vKiwiTech</motion.a>
             <div className='text-2xl'  > &#183; </div>
-            <div className='hover:underline underline-offset-8 cursor-pointer' onClick={()=>navigate("/modaonlineshopping")} >Moda Online Shopping</div>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className='hover:underline underline-offset-8 cursor-pointer' href='/modaonlineshopping' target='_blank' rel='noreferrer noopener'  >Moda Online Shopping</motion.a>
             <div className='text-2xl'  > &#183; </div>
-            <div className='hover:underline underline-offset-8 cursor-pointer' onClick={()=>navigate("/raktbank")} >RaktBank</div>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className='hover:underline underline-offset-8 cursor-pointer' href='/raktbank' target='_blank' rel='noreferrer noopener'  >RaktBank</motion.a>
         </div>
         </div>
 
