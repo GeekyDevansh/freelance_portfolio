@@ -1,13 +1,10 @@
 import React from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { IoIosArrowBack } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Scroll from "../components/Scroll";
 
 const RaktBank = ({darkMode}) => {
-
-    const Navigate = useNavigate();
 
   return (
     <>
@@ -40,25 +37,25 @@ const RaktBank = ({darkMode}) => {
                 Technologies Used
         </motion.div>
         <div className="my-16 flex flex-wrap md:flex-nowrap gap-3 md:gap-0 justify-center items-center " >
-        <motion.button initial={{opacity:0.3,y:"80%"}}
+        <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:0.2}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">HTML</motion.button>
-        <motion.button initial={{opacity:0.3,y:"80%"}}
+        <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:0.4}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">CSS</motion.button>
-        <motion.button initial={{opacity:0.3,y:"80%"}}
+        <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:0.6}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">JavaScript</motion.button>
-        <motion.button initial={{opacity:0.3,y:"80%"}}
+        <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:0.8}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">React.js</motion.button>
-        <motion.button initial={{opacity:0.3,y:"80%"}}
+        <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:1}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">Netlify</motion.button>
-        <motion.button initial={{opacity:0.3,y:"80%"}}
+        <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1.2}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">Google Form</motion.button>
-        <motion.button initial={{opacity:0.3,y:"80%"}}
+        transition={{duration:1,ease:'easeOut',delay:1.2}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">Google Forms</motion.button>
+        <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:1.4}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">Firebase</motion.button>
         </div>
