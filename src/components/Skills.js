@@ -32,7 +32,7 @@ const Skills = ({ darkMode }) => {
             >
               {" "}
               <svg
-                class={`md:w-12 md:h-12 w-10 h-10 me-2 ${
+                className={`md:w-12 md:h-12 w-10 h-10 me-2 ${
                   darkMode ? "text-white" : "text-black"
                 } m-2   flex-shrink-0`}
                 aria-hidden="true"
@@ -54,7 +54,7 @@ const Skills = ({ darkMode }) => {
             >
               {" "}
               <svg
-                class={`md:w-12 md:h-12 w-10 h-10 me-2 ${
+                className={`md:w-12 md:h-12 w-10 h-10 me-2 ${
                   darkMode ? "text-white" : "text-black"
                 } m-2   flex-shrink-0`}
                 aria-hidden="true"
@@ -76,7 +76,7 @@ const Skills = ({ darkMode }) => {
             >
               {" "}
               <svg
-                class={`md:w-12 md:h-12 w-10 h-10 me-2 ${
+                className={`md:w-12 md:h-12 w-10 h-10 me-2 ${
                   darkMode ? "text-white" : "text-black"
                 } m-2   flex-shrink-0`}
                 aria-hidden="true"
@@ -98,7 +98,7 @@ const Skills = ({ darkMode }) => {
             >
               {" "}
               <svg
-                class={`md:w-12 md:h-12 w-10 h-10 me-2 ${
+                className={`md:w-12 md:h-12 w-10 h-10 me-2 ${
                   darkMode ? "text-white" : "text-black"
                 } m-2   flex-shrink-0`}
                 aria-hidden="true"
@@ -122,7 +122,7 @@ const Skills = ({ darkMode }) => {
             >
               {" "}
               <svg
-                class={`md:w-12 md:h-12 w-10 h-10 me-2 ${
+                className={`md:w-12 md:h-12 w-10 h-10 me-2 ${
                   darkMode ? "text-white" : "text-black"
                 } m-2   flex-shrink-0`}
                 aria-hidden="true"
@@ -144,7 +144,7 @@ const Skills = ({ darkMode }) => {
             >
               {" "}
               <svg
-                class={`md:w-12 md:h-12 w-10 h-10 me-2 ${
+                className={`md:w-12 md:h-12 w-10 h-10 me-2 ${
                   darkMode ? "text-white" : "text-black"
                 } m-2   flex-shrink-0`}
                 aria-hidden="true"
@@ -166,7 +166,7 @@ const Skills = ({ darkMode }) => {
             >
               {" "}
               <svg
-                class={`md:w-12 md:h-12 w-10 h-10 me-2 ${
+                className={`md:w-12 md:h-12 w-10 h-10 me-2 ${
                   darkMode ? "text-white" : "text-black"
                 } m-2   flex-shrink-0`}
                 aria-hidden="true"
@@ -188,7 +188,7 @@ const Skills = ({ darkMode }) => {
             >
               {" "}
               <svg
-                class={`md:w-12 md:h-12 w-10 h-10 me-2 ${
+                className={`md:w-12 md:h-12 w-10 h-10 me-2 ${
                   darkMode ? "text-white" : "text-black"
                 } m-2   flex-shrink-0`}
                 aria-hidden="true"

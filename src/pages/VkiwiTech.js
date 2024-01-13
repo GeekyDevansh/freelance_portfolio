@@ -1,19 +1,29 @@
-import React from "react";
+import React,{useState} from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion } from "framer-motion";
 import Scroll from "../components/Scroll";
 
-const VkiwiTech = ({darkMode}) => {
+const VkiwiTech = () => {
 
+  const [darkMode,setDarkmode] = useState(false);
+  const handleClick = ()=>{
+    setDarkmode(!darkMode);
+  }
 
   return (
     <>
-     <div className="mx-auto md:w-3/4 flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:mt-[5%] mt-[10%] items-center font-arsenica font-semibold md:text-5xl text-4xl">
+    <div className={`h-full w-full ${darkMode?"bg-black":"bg-white"} ${darkMode?"text-white":"text-black"}`} >  
+  <div className={`${darkMode?"bg-black":"bg-white"} flex items-center justify-end overflow-x-hidden `} >
+          <div className='px-4 fixed md:top-10 top-5 md:right-8 right-2 z-20 ' onClick={handleClick} >
+        <input id="toggle" className="toggle" type="checkbox"/>
+          </div>
+        </div>
+     <div className={`mx-auto md:w-3/4 flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:mt-[5%] mt-[10%] items-center font-arsenica font-semibold md:text-5xl text-4xl ${darkMode?"text-white":"text-black"} ${darkMode?"bg-black":"bg-white"} `}>
         <motion.div initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}}>vKiwiTech</motion.div>
         <motion.a
          initial={{opacity:0,x:"30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}}
-          className="font-dmsans font-medium text-lg border-2 border-black active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#000000] px-4 py-2 shadow-[6px_6px_0_#000000]"
+          className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${darkMode?"shadow-[6px_6px_0_#ffffff] active:shadow-[4px_4px_0_#ffffff] border-white":"shadow-[6px_6px_0_#000000] active:shadow-[4px_4px_0_#000000] border-black "} `}
           href="https://vkiwitech.com/"
           target="_blank"
           rel="noreferrer noopener"
@@ -25,7 +35,7 @@ const VkiwiTech = ({darkMode}) => {
       </div>
       <div className="flex flex-wrap md:flex-nowrap gap-10 md:w-3/4 w-[90%] mx-auto my-16 justify-between items-center">
         <motion.div initial={{opacity:0,scale:0.7}} whileInView={{opacity:1,scale:1}} transition={{duration:2,ease:'easeOut'}}>
-          <img src="/vkiwi.png" alt="" className="border-black border p-2"  />
+          <img src="/vkiwi.png" alt="" className={` ${darkMode?"border-white":"border-black"} border p-2`}  />
         </motion.div>
         <motion.div initial={{opacity:0,scale:0.7}} whileInView={{opacity:1,scale:1}} transition={{duration:2,ease:'easeOut'}}>
           <img src="/vkiwi_mob_1.png" alt="" className="w-1/2 md:w-full mx-auto md:mx-0"  />
@@ -40,25 +50,25 @@ const VkiwiTech = ({darkMode}) => {
         <div className="my-16 flex flex-wrap md:flex-nowrap gap-3 md:gap-0 justify-center items-center " >
         <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.2}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">HTML</motion.button>
+        transition={{duration:1,ease:'easeOut',delay:0.2}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>HTML</motion.button>
         <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.4}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">CSS</motion.button>
+        transition={{duration:1,ease:'easeOut',delay:0.4}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>CSS</motion.button>
         <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.6}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">JavaScript</motion.button>
+        transition={{duration:1,ease:'easeOut',delay:0.6}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>JavaScript</motion.button>
         <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.8}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">React.js</motion.button>
+        transition={{duration:1,ease:'easeOut',delay:0.8}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>React.js</motion.button>
         <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">Framer Motion</motion.button>
+        transition={{duration:1,ease:'easeOut',delay:1}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Framer Motion</motion.button>
         <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1.2}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">Vercel</motion.button>
+        transition={{duration:1,ease:'easeOut',delay:1.2}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Vercel</motion.button>
         <motion.button initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1.4}} class="py-2 px-4 shadow-md no-underline border-2 border-black font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2">TailwindCSS</motion.button>
+        transition={{duration:1,ease:'easeOut',delay:1.4}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>TailwindCSS</motion.button>
         </div>
 
         <motion.div initial={{y:"80%"}}
@@ -78,7 +88,7 @@ const VkiwiTech = ({darkMode}) => {
           <motion.li initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{ease:'easeOut',duration:2,delay:0.1}}  className={`flex font-dmsans font-semibold items-center text-xl ${darkMode?"text-white":"text-black"}`}>
             {" "}
             <svg
-              class={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
+              className={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -94,7 +104,7 @@ const VkiwiTech = ({darkMode}) => {
           <motion.li initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{ease:'easeOut',duration:2}}  className={`flex font-dmsans font-semibold items-center text-xl ${darkMode?"text-white":"text-black"}`}>
             {" "}
             <svg
-              class={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
+              className={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -110,7 +120,7 @@ const VkiwiTech = ({darkMode}) => {
           <motion.li initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{ease:'easeOut',duration:2,delay:0.1}}  className={`flex font-dmsans font-semibold items-center text-xl ${darkMode?"text-white":"text-black"}`}>
             {" "}
             <svg
-              class={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
+              className={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -125,7 +135,7 @@ const VkiwiTech = ({darkMode}) => {
             <motion.li initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{ease:'easeOut',duration:2,delay:0.2}}  className={`flex font-dmsans font-semibold items-center text-xl ${darkMode?"text-white":"text-black"}`}>
             {" "}
             <svg
-              class={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
+              className={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -138,7 +148,7 @@ const VkiwiTech = ({darkMode}) => {
           <motion.li initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{ease:'easeOut',duration:2,delay:0.3}}  className={`flex font-dmsans font-semibold items-center text-xl ${darkMode?"text-white":"text-black"}`}>
             {" "}
             <svg
-              class={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
+              className={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -151,7 +161,7 @@ const VkiwiTech = ({darkMode}) => {
           <motion.li initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{ease:'easeOut',duration:2,delay:0.4}}  className={`flex font-dmsans font-semibold items-center text-xl ${darkMode?"text-white":"text-black"}`}>
             {" "}
             <svg
-              class={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
+              className={`md:w-12 md:h-12 w-8 h-8 me-2 ${darkMode?"text-white":"text-black"} m-2   flex-shrink-0`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -166,17 +176,17 @@ const VkiwiTech = ({darkMode}) => {
 
         <div className="flex flex-wrap md:flex-nowrap gap-10 md:w-3/4 w-[90%] mx-auto mt-12 justify-between items-center">
         <motion.div initial={{opacity:0,scale:0.7}} whileInView={{opacity:1,scale:1}} transition={{duration:2,ease:'easeOut'}} className="shadow-xl ">
-          <img src="/kiwi.png" alt="" className="border-black border p-2" />
+          <img src="/kiwi.png" alt="" className={` ${darkMode?"border-white":"border-black"} border p-2`} />
         </motion.div>
         <motion.div initial={{opacity:0,scale:0.7}} whileInView={{opacity:1,scale:1}} transition={{duration:2,ease:'easeOut'}}>
           <img src="/vkiwi_mob_2.png" alt="" className="w-1/2 mx-auto md:w-full md:mx-0" />
         </motion.div>
       </div>
 
-    <div className="my-16 font-arsenica font-semibold text-xl flex justify-center items-center" >
+    <div className="py-16 font-arsenica font-semibold text-xl flex justify-center items-center" >
 
     <a
-          className="font-dmsans font-medium text-lg border-2 border-black active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#000000] px-4 py-2 shadow-[6px_6px_0_#000000] cursor-pointer " href="/"
+          className={`font-dmsans font-medium text-lg border-2 active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 cursor-pointer ${darkMode?"shadow-[6px_6px_0_#ffffff] active:shadow-[4px_4px_0_#ffffff] border-white":"shadow-[6px_6px_0_#000000] active:shadow-[4px_4px_0_#000000] border-black "} `} href="/"
         >
           <button className="flex items-center">
             <IoIosArrowBack className="mr-2" /> Go back home
@@ -185,6 +195,7 @@ const VkiwiTech = ({darkMode}) => {
 
     </div>
 <Scroll/>
+</div>
     </>
   );
 };

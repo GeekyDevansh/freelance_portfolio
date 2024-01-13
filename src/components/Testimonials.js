@@ -27,31 +27,31 @@ const Testimonials = ({darkMode}) => {
         transition={{duration:1,ease:'easeOut',delay:0.1}} className={` ${darkMode?"text-white bg-black":"text-black bg-white"} font-arsenica font-semibold md:text-xl text-lg pt-4`} >
         Hear what my clients have to say.
     </motion.div>
-        <section class="text-gray-600 body-font md:w-[60%] w-[90%] ">
-  <div class=" w-full container px-5 md:py-24 py-12 mx-auto">
-    <div class="flex flex-wrap md:flex-nowrap gap-8 -m-4">
+        <section className="text-gray-600 body-font md:w-[60%] w-[90%] ">
+  <div className=" w-full container px-5 md:py-24 py-12 mx-auto">
+    <div className="flex flex-wrap md:flex-nowrap gap-8 -m-4">
       <motion.div ref={ref} style={{
           scale:scaleProgress,
           opacity:opacityProgress,
-        }} class={`lg:w-1/2 lg:mb-0 mb-6 p-4 border-2 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} `}>
-        <div class="h-full text-center">
-          <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://avatar.iran.liara.run/public/boy?username=Ashu"/>
-          <p class="leading-relaxed">"Devansh is a pro in both web development and design. His creativity resulted in a flawless website. For a skilled and reliable freelancer, choose Devansh!"</p>
-          <span class={`inline-block h-1 w-10 rounded ${darkMode?"bg-gray-200":"bg-gray-900"} mt-6 mb-4`}></span>
-          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">abc</h2>
-          <p class="text-gray-500">xyz pvt ltd.</p>
+        }} className={`lg:w-1/2 lg:mb-0 mb-6 p-4 border-2 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} ${darkMode?"text-gray-400":"text-gray-700"} `}>
+        <div className="h-full text-center">
+          <img alt="testimonial" className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://avatar.iran.liara.run/public/boy?username=Ashu"/>
+          <p className="leading-relaxed">"Devansh is a pro in both web development and design. His creativity resulted in a flawless website. For a skilled and reliable freelancer, choose Devansh!"</p>
+          <span className={`inline-block h-1 w-10 rounded ${darkMode?"bg-gray-200":"bg-gray-900"} mt-6 mb-4`}></span>
+          {/* <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">abc</h2>
+          <p className="text-gray-500">xyz pvt ltd.</p> */}
         </div>
       </motion.div>
       <motion.div ref={ref} style={{
           scale:scaleProgress,
           opacity:opacityProgress,
-        }} class={`lg:w-1/2 lg:mb-0 mb-6 p-4 border-2 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} `}>
-        <div class="h-full text-center">
-          <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://avatar.iran.liara.run/public/boy?username=Anuj"/>
-          <p class="leading-relaxed">"Devansh seamlessly blends top-tier web development with impressive design skills. He delivered a visually stunning website, exceeding our expectations. I highly recommend Devansh for freelance web development and design."</p>
-          <span class={`inline-block h-1 w-10 rounded ${darkMode?"bg-gray-200":"bg-gray-900"} mt-6 mb-4`}></span>
-          <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ABC</h2>
-          <p class="text-gray-500">XYZ Pvt Ltd</p>
+        }} className={`lg:w-1/2 lg:mb-0 mb-6 p-4 border-2 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} ${darkMode?"text-gray-400":"text-gray-700"} `}>
+        <div className="h-full text-center">
+          <img alt="testimonial" className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://avatar.iran.liara.run/public/boy?username=Anuj"/>
+          <p className="leading-relaxed">"Devansh seamlessly blends top-tier web development with impressive design skills. He delivered a visually stunning website, exceeding our expectations. I highly recommend Devansh for freelance web development and design."</p>
+          <span className={`inline-block h-1 w-10 rounded ${darkMode?"bg-gray-200":"bg-gray-900"} mt-6 mb-4`}></span>
+          {/* <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">ABC</h2>
+          <p className="text-gray-500">XYZ Pvt Ltd</p> */}
         </div>
       </motion.div>
     </div>

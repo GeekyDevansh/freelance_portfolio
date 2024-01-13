@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import Navbar from "./components/Navbar.js";
 import Hero from "./components/Hero.js";
 import About from "./components/About.js";
@@ -11,25 +11,22 @@ import Hire from "./components/Hire.js";
 import Footer from "./components/Footer.js";
 import Scroll from "./components/Scroll.js";
 
-
 function App() {
-    const [darkMode,setDarkmode]=useState(false);
+  const [darkMode, setDarkmode] = useState(false);
 
-   
-    
   return (
     <>
-    <Navbar darkMode={darkMode} setDarkmode={setDarkmode} />
-        <Hero darkMode={darkMode}  />
-        <About darkMode={darkMode} />
-        <Skills darkMode={darkMode}/>
-        <Tools darkMode={darkMode} />
-        <Projects darkMode={darkMode} />
-        <Slogan darkMode={darkMode} />
-        <Testimonials darkMode={darkMode} />
-        <Hire darkMode={darkMode} />
-        <Footer darkMode={darkMode} />
-        <Scroll/>
+      <Navbar darkMode={darkMode} setDarkmode={setDarkmode} />
+      <Hero darkMode={darkMode} />
+      <About darkMode={darkMode} />
+      <Skills darkMode={darkMode} />
+      <Tools darkMode={darkMode} />
+      <Projects darkMode={darkMode} />
+      <Slogan darkMode={darkMode} />
+      <Testimonials darkMode={darkMode} />
+      <Hire darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
+      <Scroll />
     </>
   );
 }
