@@ -3,6 +3,10 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion } from "framer-motion";
 import Scroll from "../components/Scroll";
+import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
+
+
 
 const MatchMyService = () => {
 
@@ -13,14 +17,21 @@ const MatchMyService = () => {
 
   return (
     <>
+     <Helmet>
+            <title>Devansh Khullar | MatchMyService</title>
+            <meta name="description" content="MatchMyService: Connects users with providers. Post requirements, compare bids, and hire the best service provider with an intuitive web interface." />
+        </Helmet>
   <div className={`h-full w-full ${darkMode?"bg-black":"bg-white"} ${darkMode?"text-white":"text-black"}`} >  
   <div className={`${darkMode?"bg-black":"bg-white"} flex items-center justify-end overflow-x-hidden `} >
-          <div className='px-4 fixed md:top-10 top-5 md:right-8 right-2 z-20 ' onClick={handleClick} >
-        <input id="toggle" className="toggle" type="checkbox"/>
+  <div className={` ${darkMode?"text-white":"text-black"} px-4 fixed md:top-11 md:block hidden font-semibold font-arsenica right-20 z-20`} >
+            {darkMode?"Dark":"Light"} theme :
+          </div>
+          <div className='px-4 fixed md:top-10 top-5 md:right-8 right-2 z-20 '  >
+        <input id="toggle" className="toggle" type="checkbox" onClick={handleClick} />
           </div>
         </div>
 
-      <div className={`mx-auto md:w-3/4 flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:mt-[5%] mt-[10%] items-center font-arsenica font-semibold md:text-5xl text-4xl ${darkMode?"text-white":"text-black"} ${darkMode?"bg-black":"bg-white"} `}>
+      <div className={`mx-auto md:w-3/4 flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:mt-[7%] mt-[10%] items-center font-arsenica font-semibold md:text-5xl text-4xl ${darkMode?"text-white":"text-black"} ${darkMode?"bg-black":"bg-white"} `}>
 
         <motion.div initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}} >MatchMyService</motion.div>
         <motion.a
@@ -228,6 +239,7 @@ const MatchMyService = () => {
 
     </div>
 <Scroll/>
+<Footer darkMode={darkMode} />
 </div>
     </>
   );

@@ -2,6 +2,7 @@ import React,{useRef} from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import {motion, useScroll, useTransform} from 'framer-motion';
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Projects = ({darkMode}) => {
 
@@ -54,13 +55,13 @@ const Projects = ({darkMode}) => {
   </AutoplaySlider>
     </motion.div>
         <div className={`flex flex-wrap md:flex-nowrap justify-center items-center md:gap-4 gap-2 font-arsenica font-semibold md:text-xl mb-12 ${darkMode?"text-white":"text-black"} w-[90%] `} >
-            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className='hover:underline underline-offset-8 cursor-pointer' href='/matchmyservice' target='_blank' rel='noreferrer noopener' >MatchMyService</motion.a>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className={`hover:border-b-2 ${darkMode?"border-white":"border-black"} cursor-pointer flex justify-center items-center gap-1`} href='/matchmyservice' target='_blank' rel='noreferrer noopener' >MatchMyService <MdOutlineArrowOutward size={24} /> </motion.a>
             <div className='text-2xl' >&#183;</div>
-            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className='hover:underline underline-offset-8 cursor-pointer' href='/vkiwitech' target='_blank' rel='noreferrer noopener' >vKiwiTech</motion.a>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className={`hover:border-b-2 ${darkMode?"border-white":"border-black"} cursor-pointer flex justify-center items-center gap-1`} href='/vkiwitech' target='_blank' rel='noreferrer noopener' >vKiwiTech <MdOutlineArrowOutward size={24} /> </motion.a>
             <div className='text-2xl'  > &#183; </div>
-            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className='hover:underline underline-offset-8 cursor-pointer' href='/modaonlineshopping' target='_blank' rel='noreferrer noopener'  >Moda Online Shopping</motion.a>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className={`hover:border-b-2 ${darkMode?"border-white":"border-black"} cursor-pointer flex justify-center items-center gap-1`} href='/modaonlineshopping' target='_blank' rel='noreferrer noopener'  >Moda Online Shopping <MdOutlineArrowOutward size={24} /> </motion.a>
             <div className='text-2xl'  > &#183; </div>
-            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className='hover:underline underline-offset-8 cursor-pointer' href='/raktbank' target='_blank' rel='noreferrer noopener'  >RaktBank</motion.a>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className={`hover:border-b-2 ${darkMode?"border-white":"border-black"} cursor-pointer flex justify-center items-center gap-1`} href='/raktbank' target='_blank' rel='noreferrer noopener'  >RaktBank <MdOutlineArrowOutward size={24} /> </motion.a>
         </div>
         </div>
 
