@@ -10,6 +10,7 @@ import Testimonials from "./components/Testimonials.js";
 import Hire from "./components/Hire.js";
 import Footer from "./components/Footer.js";
 import Scroll from "./components/Scroll.js";
+import Description from "./components/Description.js";
 
 function App() {
   const [darkMode, setDarkmode] = useState(false);
@@ -18,6 +19,7 @@ function App() {
     <>
       <Navbar darkMode={darkMode} setDarkmode={setDarkmode} />
       <Hero darkMode={darkMode} />
+      <Description darkMode={darkMode} />
       <About darkMode={darkMode} />
       <Skills darkMode={darkMode} />
       <Tools darkMode={darkMode} />
