@@ -49,7 +49,7 @@ const Hire = ({ darkMode }) => {
         }} >
   <div className={`container border-2 md:px-12 px-6 md:py-20 py-10 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} `}>
     <div className="lg:w-full md:w-full mx-auto">
-      <form className="flex flex-wrap -m-2" action="https://formsubmit.co/devanshkhullar11@gmail.com" method="POST">
+      <form className="flex flex-wrap -m-2" action="https://formsubmit.co/2fc845d42716d1c5b554e3018b03050d" method="POST">
         <div className="p-2 w-1/2">
           <div className="relative font-arsenica  font-semibold ">
             <label for="name" className={`leading-7  ${darkMode?"text-white":"text-black"}`}>Name</label>

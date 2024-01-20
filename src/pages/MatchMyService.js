@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 
 const MatchMyService = () => {
 
-  const [darkMode,setDarkmode] = useState(false);
+  const [darkMode,setDarkmode] = useState(true);
   const handleClick = ()=>{
     setDarkmode(!darkMode);
   }

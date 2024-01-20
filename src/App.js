@@ -13,7 +13,7 @@ import Scroll from "./components/Scroll.js";
 import Description from "./components/Description.js";
 
 function App() {
-  const [darkMode, setDarkmode] = useState(false);
+  const [darkMode, setDarkmode] = useState(true);
 
   return (
     <>

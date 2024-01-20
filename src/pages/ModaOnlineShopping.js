@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 
 const ModaOnlineShopping = () => {
 
-  const [darkMode,setDarkmode] = useState(false);
+  const [darkMode,setDarkmode] = useState(true);
   const handleClick = ()=>{
     setDarkmode(!darkMode);
   }

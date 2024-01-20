@@ -13,7 +13,9 @@ import { FaShopify } from "react-icons/fa";
 import { FaWix } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
 import { FaAws } from "react-icons/fa";
+import { BiLogoTailwindCss } from "react-icons/bi";
 import { motion } from "framer-motion"; 
+
 
 const Tools = ({ darkMode }) => {
   const settings = {
@@ -114,6 +116,11 @@ const Tools = ({ darkMode }) => {
             <div>
               <div className="md:text-8xl text-6xl ">
                 <TiCss3 />
+              </div>
+            </div>
+            <div>
+              <div className="md:text-8xl text-6xl ">
+              <BiLogoTailwindCss />
               </div>
             </div>
           </Slider>
