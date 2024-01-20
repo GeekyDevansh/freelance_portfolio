@@ -37,7 +37,7 @@ const Projects = ({darkMode}) => {
     <motion.div ref={ref} style={{
           scale:scaleProgress,
           opacity:opacityProgress,
-        }} className={`md:w-[60%] w-[90%] border-2 md:px-8 px-2 md:pb-8 pb-2 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} mb-12 `} >
+        }} className={`md:w-[60%] w-[90%] border-2 md:px-8 px-2 md:pb-8 pb-2 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} mb-12 `} >
         <div className='flex gap-2 md:py-2 py-1' >
 
         <div className='bg-red-500 md:w-4 md:h-4 w-1 h-1  rounded-full' >

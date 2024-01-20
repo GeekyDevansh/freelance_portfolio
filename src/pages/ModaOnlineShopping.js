@@ -32,7 +32,7 @@ const ModaOnlineShopping = () => {
         <motion.div initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}}>Moda Online Shopping</motion.div>
         <motion.a
          initial={{opacity:0,x:"30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}}
-          className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${darkMode?"shadow-[6px_6px_0_#ffffff] active:shadow-[4px_4px_0_#ffffff] border-white":"shadow-[6px_6px_0_#000000] active:shadow-[4px_4px_0_#000000] border-black "} `}
+          className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${darkMode?"shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white":"shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "} rounded-xl `}
           href="https://moda-online-shopping.vercel.app/"
           target="_blank"
           rel="noreferrer noopener"
@@ -226,7 +226,7 @@ const ModaOnlineShopping = () => {
     <div className="py-16 font-arsenica font-semibold text-xl flex justify-center items-center" >
 
     <a
-          className={`font-dmsans font-medium text-lg border-2 active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 cursor-pointer ${darkMode?"shadow-[6px_6px_0_#ffffff] active:shadow-[4px_4px_0_#ffffff] border-white":"shadow-[6px_6px_0_#000000] active:shadow-[4px_4px_0_#000000] border-black "} `} href="/"
+          className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${darkMode?"shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white":"shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "} rounded-xl `} href="/"
         >
           <button className="flex items-center">
             <IoIosArrowBack className="mr-2" /> Go back home

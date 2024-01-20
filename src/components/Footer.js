@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Footer = ({darkMode}) => {
   return (
     <>
-    <footer  className={`${darkMode?"text-gray-600":"text-gray-800"} body-font ${darkMode?"bg-black":"bg-white"} `}>
+    <footer  className={`${darkMode?"text-gray-600":"text-gray-800"} body-font ${darkMode?"bg-black":"bg-white"} border-t border-gray-400 `}>
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
       <motion.p initial={{opacity:0}}

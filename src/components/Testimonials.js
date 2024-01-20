@@ -33,7 +33,7 @@ const Testimonials = ({darkMode}) => {
       <motion.div ref={ref} style={{
           scale:scaleProgress,
           opacity:opacityProgress,
-        }} className={`lg:w-1/2 lg:mb-0 mb-6 p-4 border-2 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} ${darkMode?"text-gray-400":"text-gray-700"} `}>
+        }} className={`lg:w-1/2 lg:mb-0 mb-6 p-4 border-2 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} ${darkMode?"text-gray-400":"text-gray-700"} `}>
         <div className="h-full text-center">
           <img alt="testimonial" className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="/sanidhya1.webp"/>
           <p className="leading-relaxed">"Devansh excels in website design, development and SEO services, crafting flawless websites. Trust him for freelance work; he's a top professional in these areas, ensuring reliable and comprehensive services."</p>
@@ -44,7 +44,7 @@ const Testimonials = ({darkMode}) => {
       <motion.div ref={ref} style={{
           scale:scaleProgress,
           opacity:opacityProgress,
-        }} className={`lg:w-1/2 lg:mb-0 mb-6 p-4 border-2 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} ${darkMode?"text-gray-400":"text-gray-700"} `}>
+        }} className={`lg:w-1/2 lg:mb-0 mb-6 p-4 border-2 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} ${darkMode?"text-gray-400":"text-gray-700"} `}>
         <div className="h-full text-center">
           <img alt="testimonial" className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="/anuj.webp"/>
           <p className="leading-relaxed">"Devansh seamlessly integrates top-tier web development, stunning design, and effective SEO. His work exceeds expectations, making him highly recommended for web development, design, and SEO."</p>

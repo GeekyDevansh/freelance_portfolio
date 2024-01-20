@@ -47,7 +47,7 @@ const Hire = ({ darkMode }) => {
           scale:scaleProgress,
           opacity:opacityProgress,
         }} >
-  <div className={`container border-2 md:px-12 px-6 md:py-20 py-10 ${darkMode?"border-white shadow-[10px_10px_0_#ffffff]":"border-black shadow-[10px_10px_0_#000000]"} `}>
+  <div className={`container border-2 md:px-12 px-6 md:py-20 py-10 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} `}>
     <div className="lg:w-full md:w-full mx-auto">
       <form className="flex flex-wrap -m-2" action="https://formsubmit.co/2fc845d42716d1c5b554e3018b03050d" method="POST">
         <div className="p-2 w-1/2">
@@ -69,7 +69,7 @@ const Hire = ({ darkMode }) => {
           </div>
         </div>
         <div className="p-2 w-full">
-          <button className={` shadow-[6px_6px_0_#004d4d] flex mx-auto text-white py-2 px-8 bg-[#006666] text-lg active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#004d4d] font-arsenica font-semibold `} type="submit" >Send</button>
+          <button className={` shadow-[6px_6px_0_#004d4d] flex mx-auto text-white py-2 px-8 bg-[#006666] text-lg active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#004d4d] font-arsenica font-semibold rounded-xl`} type="submit" >Send</button>
         </div>
       </form>
     </div>
