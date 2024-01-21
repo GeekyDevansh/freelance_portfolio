@@ -57,27 +57,27 @@ const RaktBank = () => {
                 Technologies Used
         </motion.div>
         <div className="my-16 flex flex-wrap md:flex-nowrap gap-3 md:gap-0 justify-center items-center " >
-        <motion.button initial={{opacity:0,y:"80%"}}
+        <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.2}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>HTML</motion.button>
-        <motion.button initial={{opacity:0,y:"80%"}}
+        transition={{duration:1,ease:'easeOut',delay:0.2}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>HTML</motion.div>
+        <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.4}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>CSS</motion.button>
-        <motion.button initial={{opacity:0,y:"80%"}}
+        transition={{duration:1,ease:'easeOut',delay:0.4}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>CSS</motion.div>
+        <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.6}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>JavaScript</motion.button>
-        <motion.button initial={{opacity:0,y:"80%"}}
+        transition={{duration:1,ease:'easeOut',delay:0.6}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>JavaScript</motion.div>
+        <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.8}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>React.js</motion.button>
-        <motion.button initial={{opacity:0,y:"80%"}}
+        transition={{duration:1,ease:'easeOut',delay:0.8}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>React.js</motion.div>
+        <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Netlify</motion.button>
-        <motion.button initial={{opacity:0,y:"80%"}}
+        transition={{duration:1,ease:'easeOut',delay:1}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Netlify</motion.div>
+        <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1.2}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Google Forms</motion.button>
-        <motion.button initial={{opacity:0,y:"80%"}}
+        transition={{duration:1,ease:'easeOut',delay:1.2}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Google Forms</motion.div>
+        <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1.4}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Firebase</motion.button>
+        transition={{duration:1,ease:'easeOut',delay:1.4}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Firebase</motion.div>
         </div>
 
         <motion.div initial={{y:"80%"}}
