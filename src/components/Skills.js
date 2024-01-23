@@ -10,8 +10,8 @@ const Skills = ({ darkMode }) => {
         } flex flex-col justify-center items-center py-12 `}
       >
         <motion.div
-          initial={{ y: "80%" }}
-          whileInView={{ y: 0 }}
+          initial={{ opacity:0,y: "80%" }}
+          whileInView={{ opacity:1,y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className={` ${
             darkMode ? "text-white" : "text-black"

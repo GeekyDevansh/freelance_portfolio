@@ -21,8 +21,8 @@ const Hire = ({ darkMode }) => {
         } flex flex-col justify-center items-center `}
       >
         <motion.div
-        initial={{y:"80%"}}
-        whileInView={{y:0}}
+        initial={{opacity:0,y:"80%"}}
+        whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut'}}
           className={` ${
             darkMode ? "text-white" : "text-black"
@@ -32,8 +32,8 @@ const Hire = ({ darkMode }) => {
         </motion.div>
 
         <motion.div
-        initial={{y:"80%"}}
-        whileInView={{y:0}}
+        initial={{opacity:0,y:"80%"}}
+        whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:0.1}}
           className={` ${
             darkMode ? "text-white bg-black" : "text-black bg-white"

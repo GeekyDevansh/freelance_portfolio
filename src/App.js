@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import Navbar from "./components/Navbar.js";
 import Hero from "./components/Hero.js";
 import About from "./components/About.js";
@@ -12,11 +12,13 @@ import Footer from "./components/Footer.js";
 import Scroll from "./components/Scroll.js";
 import Description from "./components/Description.js";
 
+
 function App() {
   const [darkMode, setDarkmode] = useState(true);
 
   return (
     <>
+      
       <Navbar darkMode={darkMode} setDarkmode={setDarkmode} />
       <Hero darkMode={darkMode} />
       <Description darkMode={darkMode} />

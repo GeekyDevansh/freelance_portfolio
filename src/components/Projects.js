@@ -22,14 +22,14 @@ const Projects = ({darkMode}) => {
     
     <div className={` ${darkMode?"bg-black":"bg-white"} flex flex-col justify-center items-center `}>
 
-    <motion.div initial={{y:"80%"}}
-        whileInView={{y:0}}
+    <motion.div initial={{opacity:0,y:"80%"}}
+        whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut'}} className={` ${darkMode?"text-white":"text-black"} tracking-widest md:text-5xl text-4xl w-[90%] text-center`} >
         MY ART
     </motion.div>
 
-    <motion.div initial={{y:"80%"}}
-        whileInView={{y:0}}
+    <motion.div initial={{opacity:0,y:"80%"}}
+        whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:0.1}} className={` ${darkMode?"text-white":"text-black"} font-arsenica font-semibold md:my-12 mt-2 md:mt-4 mb-6 md:text-xl text-lg`} >
         Works that I am most proud of.
     </motion.div>

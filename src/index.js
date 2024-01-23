@@ -1,8 +1,8 @@
-import React,{useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 import AnimatedRoutes from './components/AnimatedRoutes';
 
 

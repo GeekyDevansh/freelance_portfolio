@@ -17,13 +17,13 @@ const Testimonials = ({darkMode}) => {
     <>
 
 <div className={` ${darkMode?"bg-black":"bg-white"} flex flex-col justify-center items-center py-12 `}>
-<motion.div initial={{y:"80%"}}
-        whileInView={{y:0}}
+<motion.div initial={{opacity:0,y:"80%"}}
+        whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut'}} className={` ${darkMode?"text-white":"text-black"} tracking-widest md:text-5xl text-4xl text-center w-[90%]`} >
         TESTIMONIALS
     </motion.div>
-    <motion.div initial={{y:"80%"}}
-        whileInView={{y:0}}
+    <motion.div initial={{opacity:0,y:"80%"}}
+        whileInView={{opacity:1,y:0}}
         transition={{duration:1,ease:'easeOut',delay:0.1}} className={` ${darkMode?"text-white bg-black":"text-black bg-white"} font-arsenica font-semibold md:text-xl text-lg pt-4`} >
         Hear what my clients have to say.
     </motion.div>
