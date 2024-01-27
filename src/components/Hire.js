@@ -1,17 +1,8 @@
-import React,{useRef} from "react";
-import {motion, useScroll, useTransform} from 'framer-motion';
+import React from "react";
+import {motion} from 'framer-motion';
 
 const Hire = ({ darkMode }) => {
 
-  const ref=useRef(null);
-
-  const {scrollYProgress}=useScroll({
-    target:ref,
-    offset:["0 1", "1.33 1"],
-  });
-
-  const scaleProgress  = useTransform(scrollYProgress,[0,1],[0.8,1]);
-  const opacityProgress  = useTransform(scrollYProgress,[0,1],[0.6,1]);
 
   return (
     <>
@@ -43,28 +34,25 @@ const Hire = ({ darkMode }) => {
         </motion.div>
         
 
-        <motion.section className="text-gray-600 body-font relative md:w-1/2 w-[90%] py-12 " ref={ref} style={{
-          scale:scaleProgress,
-          opacity:opacityProgress,
-        }} >
+        <motion.section className="text-gray-600 body-font relative md:w-1/2 w-[90%] py-12 " initial={{scale:0.5,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:1}} >
   <div className={`container border-2 md:px-12 px-6 md:py-20 py-10 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} `}>
     <div className="lg:w-full md:w-full mx-auto">
       <form className="flex flex-wrap -m-2" action="https://formsubmit.co/2fc845d42716d1c5b554e3018b03050d" method="POST">
         <div className="p-2 w-1/2">
           <div className="relative font-arsenica  font-semibold ">
-            <label for="name" className={`leading-7  ${darkMode?"text-white":"text-black"}`}>Name</label>
+            <label htmlFor="name" className={`leading-7  ${darkMode?"text-white":"text-black"}`}>Name</label>
             <input type="text" id="name" name="name" className="w-full bg-gray-100  rounded border border-gray-500 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
           </div>
         </div>
         <div className="p-2 w-1/2">
           <div className="relative  font-arsenica  font-semibold  ">
-            <label for="email" className={`leading-7  ${darkMode?"text-white":"text-black"}`}>Email</label>
+            <label htmlFor="email" className={`leading-7  ${darkMode?"text-white":"text-black"}`}>Email</label>
             <input type="email" id="email" name="email" className="w-full bg-gray-100  rounded border border-gray-500 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
           </div>
         </div>
         <div className="p-2 w-full">
           <div className="relative  font-arsenica  font-semibold  ">
-            <label for="message" className={`leading-7  ${darkMode?"text-white":"text-black"}`}>Message</label>
+            <label htmlFor="message" className={`leading-7  ${darkMode?"text-white":"text-black"}`}>Message</label>
             <textarea id="message" name="message" className="w-full bg-gray-100 rounded border border-gray-500 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required ></textarea>
           </div>
         </div>

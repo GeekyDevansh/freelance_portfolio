@@ -1,26 +1,26 @@
-import React,{useRef} from 'react';
+import React,{useEffect} from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import {motion, useScroll, useTransform} from 'framer-motion';
 import { MdOutlineArrowOutward } from "react-icons/md";
+import locomotiveScroll from "locomotive-scroll";
 
 const Projects = ({darkMode}) => {
 
     const AutoplaySlider = withAutoplay(AwesomeSlider);
-    const ref=useRef(null);
 
-  const {scrollYProgress}=useScroll({
-    target:ref,
-    offset:["0 1", "1.33 1"],
-  });
+  // const {scrollYProgress}=useScroll({
+  //   target:ref,
+  //   offset:["0 1", "1.33 1"],
+  // });
 
-  const scaleProgress  = useTransform(scrollYProgress,[0,1],[0.8,1]);
-  const opacityProgress  = useTransform(scrollYProgress,[0,1],[0.6,1]);
+  // const scaleProgress  = useTransform(scrollYProgress,[0,1],[0.8,1]);
+  // const opacityProgress  = useTransform(scrollYProgress,[0,1],[0.6,1]);
 
   return (
     <>
     
-    <div className={` ${darkMode?"bg-black":"bg-white"} flex flex-col justify-center items-center `}>
+    <div className={` ${darkMode?"bg-black":"bg-white"} flex flex-col justify-center items-center ` }  >
 
     <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
@@ -30,14 +30,11 @@ const Projects = ({darkMode}) => {
 
     <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.1}} className={` ${darkMode?"text-white":"text-black"} font-arsenica font-semibold md:my-12 mt-2 md:mt-4 mb-6 md:text-xl text-lg`} >
+        transition={{duration:1,ease:'easeOut',delay:0.1}} className={` ${darkMode?"text-white":"text-black"} font-arsenica font-semibold md:my-12 mt-2 md:mt-4 mb-6 md:text-xl text-lg  `} >
         Works that I am most proud of.
     </motion.div>
 
-    <motion.div ref={ref} style={{
-          scale:scaleProgress,
-          opacity:opacityProgress,
-        }} className={`md:w-[60%] w-[90%] border-2 md:px-8 px-2 md:pb-8 pb-2 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} mb-12 `} >
+    <motion.div initial={{scale:0.5,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:1}}  className={`md:w-[60%] w-[90%] border-2 md:px-8 px-2 md:pb-8 pb-2 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} mb-12  `} >
         <div className='flex gap-2 md:py-2 py-1' >
 
         <div className='bg-red-500 md:w-4 md:h-4 w-1 h-1  rounded-full' >

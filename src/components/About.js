@@ -65,7 +65,7 @@ const About = ({darkMode}) => {
       <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
       <motion.div  initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:1,ease:'easeOut'}} class="flex-shrink-0   md:w-24 md:h-24 w-20 h-20 bg-opacity-50 text-gray-900 rounded-full inline-flex items-center justify-center">
+        transition={{duration:1,ease:'easeOut'}} className="flex-shrink-0   md:w-24 md:h-24 w-20 h-20 bg-opacity-50 text-gray-900 rounded-full inline-flex items-center justify-center">
           {darkMode?<img src="/darkGlobe.svg" alt="" />:<img src="/globe.svg" alt="" />}
         </motion.div>
         <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
