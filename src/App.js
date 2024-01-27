@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React,{useState,useRef} from "react";
 import Navbar from "./components/Navbar.js";
 import Hero from "./components/Hero.js";
 import About from "./components/About.js";
@@ -11,26 +11,28 @@ import Hire from "./components/Hire.js";
 import Footer from "./components/Footer.js";
 import Scroll from "./components/Scroll.js";
 import Description from "./components/Description.js";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import Home from "./components/Home.js";
 
 
 function App() {
   const [darkMode, setDarkmode] = useState(true);
 
+  const ref = useRef(null);
+
+  const options = {
+    smooth: true,
+  } 
+
   return (
     <>
-      
       <Navbar darkMode={darkMode} setDarkmode={setDarkmode} />
-      <Hero darkMode={darkMode} />
-      <Description darkMode={darkMode} />
-      <About darkMode={darkMode} />
-      <Skills darkMode={darkMode} />
-      <Tools darkMode={darkMode} />
-      <Projects darkMode={darkMode} />
-      <Slogan darkMode={darkMode} />
-      <Testimonials darkMode={darkMode} />
-      <Hire darkMode={darkMode} />
-      <Footer darkMode={darkMode} />
-      <Scroll />
+      <LocomotiveScrollProvider options={options} containerRef={ref}>
+      <div data-scroll-container ref={ref}>
+     <Home darkMode={darkMode} />
+      </div>
+      </LocomotiveScrollProvider>
+      {/* <Scroll /> */}
     </>
   );
 }
