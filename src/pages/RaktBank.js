@@ -1,17 +1,23 @@
-import React,{useState} from "react";
+import React,{useState, useRef} from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion } from "framer-motion";
-import Scroll from "../components/Scroll";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 const RaktBank = () => {
 
-  const [darkMode,setDarkmode] = useState(true);
+  const [darkMode,setDarkmode] = useState(false);
   const handleClick = ()=>{
     setDarkmode(!darkMode);
   }
+
+  const ref = useRef(null);
+
+  const options = {
+    smooth: true,
+  } 
 
   return (
     <>
@@ -19,7 +25,8 @@ const RaktBank = () => {
             <title>Devansh Khullar | RaktBank</title>
             <meta name="description" content="RaktBank: Tailored online portal for dyslexia, linking blood donors and patients effortlessly. User-friendly design ensures a smooth blood donation experience." />
         </Helmet>
-      <div className={`h-full w-full ${darkMode?"bg-black":"bg-white"} ${darkMode?"text-white":"text-black"}`} >  
+        <LocomotiveScrollProvider options={options} containerRef={ref}>
+      <div className={`h-full w-full ${darkMode?"bg-black":"bg-white"} ${darkMode?"text-white":"text-black"}`}  data-scroll-container ref={ref} >  
   <div className={`${darkMode?"bg-black":"bg-white"} flex items-center justify-end overflow-x-hidden `} >
   <div className={` ${darkMode?"text-white":"text-black"} px-4 fixed md:top-11 md:block hidden font-semibold font-arsenica right-20 z-20`} >
             {darkMode?"Dark":"Light"} theme :
@@ -38,7 +45,7 @@ const RaktBank = () => {
           rel="noreferrer noopener"
         >
           <button className="flex items-center">
-            Check It Out <TfiArrowTopRight className="mt-1 ml-1" />
+            Check it out <TfiArrowTopRight className="mt-1 ml-1" />
           </button>
         </motion.a>
       </div>
@@ -205,9 +212,9 @@ const RaktBank = () => {
         </a>
 
     </div>
-    <Scroll/>
     <Footer darkMode={darkMode} />
     </div>
+    </LocomotiveScrollProvider>
     </>
   );
 };

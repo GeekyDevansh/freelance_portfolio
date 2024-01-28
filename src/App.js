@@ -5,7 +5,7 @@ import Home from "./components/Home.js";
 
 
 function App() {
-  const [darkMode, setDarkmode] = useState(true);
+  const [darkMode, setDarkmode] = useState(false);
 
   const ref = useRef(null);
 

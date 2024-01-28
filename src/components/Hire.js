@@ -57,7 +57,11 @@ const Hire = ({ darkMode }) => {
           </div>
         </div>
         <div className="p-2 w-full">
-          <button className={` shadow-[6px_6px_0_#004d4d] flex mx-auto text-white py-2 px-8 bg-[#006666] text-lg active:translate-x-[2px] active:translate-y-[2px] active:shadow-[4px_4px_0_#004d4d] font-arsenica font-semibold rounded-xl`} type="submit" >Send</button>
+          <button className={`flex mx-auto py-2 px-8 border-2 text-lg active:translate-x-[2px] ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white text-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black text-black "
+            } font-arsenica font-semibold rounded-xl`} type="submit" >Send</button>
         </div>
       </form>
     </div>

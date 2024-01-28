@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion } from "framer-motion";
-import Scroll from "../components/Scroll";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 const MatchMyService = () => {
-  const [darkMode, setDarkmode] = useState(true);
+  const [darkMode, setDarkmode] = useState(false);
   const handleClick = () => {
     setDarkmode(!darkMode);
   };
+
+
+  const ref = useRef(null);
+
+  const options = {
+    smooth: true,
+  } 
 
   return (
     <>
@@ -21,10 +28,11 @@ const MatchMyService = () => {
           content="MatchMyService: Connects users with providers. Post requirements, compare bids, and hire the best service provider with an intuitive web interface."
         />
       </Helmet>
+      <LocomotiveScrollProvider options={options} containerRef={ref}>
       <div
         className={`h-full w-full ${darkMode ? "bg-black" : "bg-white"} ${
           darkMode ? "text-white" : "text-black"
-        }`}
+        }`} data-scroll-container ref={ref} 
       >
         <div
           className={`${
@@ -64,7 +72,7 @@ const MatchMyService = () => {
             initial={{ opacity: 0, x: "30%" }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${
+            className= {`font-arsenica font-semibold text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${
               darkMode
                 ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
                 : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
@@ -74,7 +82,7 @@ const MatchMyService = () => {
             rel="noreferrer noopener"
           >
             <button className="flex items-center">
-              Check It Out <TfiArrowTopRight className="mt-1 ml-1" />
+              Check it out <TfiArrowTopRight className="mt-1 ml-1" />
             </button>
           </motion.a>
         </div>
@@ -437,7 +445,7 @@ const MatchMyService = () => {
 
         <div className="py-16 font-arsenica font-semibold text-xl flex justify-center items-center">
           <a
-            className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${
+            className={`font-arsenica font-semibold text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${
               darkMode
                 ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
                 : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
@@ -449,9 +457,9 @@ const MatchMyService = () => {
             </button>
           </a>
         </div>
-        <Scroll />
         <Footer darkMode={darkMode} />
       </div>
+      </LocomotiveScrollProvider>
     </>
   );
 };

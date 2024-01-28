@@ -1,17 +1,23 @@
-import React,{useState} from "react";
+import React,{useState, useRef} from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion } from "framer-motion";
-import Scroll from "../components/Scroll";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 const ModaOnlineShopping = () => {
 
-  const [darkMode,setDarkmode] = useState(true);
+  const [darkMode,setDarkmode] = useState(false);
   const handleClick = ()=>{
     setDarkmode(!darkMode);
   }
+
+  const ref = useRef(null);
+
+  const options = {
+    smooth: true,
+  } 
 
   return (
     <>
@@ -19,7 +25,8 @@ const ModaOnlineShopping = () => {
             <title>Devansh Khullar | Moda E-commerce</title>
             <meta name="description" content="Moda Online Shopping: Streamlined e-commerce with user-friendly UI, Next.js for frontend, Sanity.io for product management, and Stripe for secure payments." />
         </Helmet>
-    <div className={`h-full w-full ${darkMode?"bg-black":"bg-white"} ${darkMode?"text-white":"text-black"}`} >  
+        <LocomotiveScrollProvider options={options} containerRef={ref}>
+    <div className={`h-full w-full ${darkMode?"bg-black":"bg-white"} ${darkMode?"text-white":"text-black"}`}  data-scroll-container ref={ref} >  
   <div className={`${darkMode?"bg-black":"bg-white"} flex items-center justify-end overflow-x-hidden `} >
   <div className={` ${darkMode?"text-white":"text-black"} px-4 fixed md:top-11 md:block hidden font-semibold font-arsenica right-20 z-20`} >
             {darkMode?"Dark":"Light"} theme :
@@ -32,13 +39,13 @@ const ModaOnlineShopping = () => {
         <motion.div initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}}>Moda Online Shopping</motion.div>
         <motion.a
          initial={{opacity:0,x:"30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}}
-          className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${darkMode?"shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white":"shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "} rounded-xl `}
+          className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${darkMode?"shadow-[6px_6px_0_#ffffff] active:shadow-[4px_4px_0_#ffffff] border-white":"shadow-[6px_6px_0_#000000] active:shadow-[4px_4px_0_#000000] border-black "} rounded-xl `}
           href="https://moda-online-shopping.vercel.app/"
           target="_blank"
           rel="noreferrer noopener"
         >
           <button className="flex items-center">
-            Check It Out <TfiArrowTopRight className="mt-1 ml-1" />
+            Check it out <TfiArrowTopRight className="mt-1 ml-1" />
           </button>
         </motion.a>
       </div>
@@ -234,9 +241,9 @@ const ModaOnlineShopping = () => {
         </a>
 
     </div>
-    <Scroll/>
     <Footer darkMode={darkMode} />
     </div>
+    </LocomotiveScrollProvider>
     </>
   );
 };
