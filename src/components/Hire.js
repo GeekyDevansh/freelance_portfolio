@@ -35,7 +35,7 @@ const Hire = ({ darkMode }) => {
         
 
         <motion.section className="text-gray-600 body-font relative md:w-1/2 w-[90%] py-12 " initial={{scale:0.5,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:1}} >
-  <div className={`container border-2 md:px-12 px-6 md:py-20 py-10 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} `}>
+  <div className={`container border-2 md:px-12 px-6 md:py-20 py-10 ${darkMode?"border-white shadow-[6px_6px_0_#ffffff]":"border-black shadow-[6px_6px_0_#000000]"} rounded-2xl `}>
     <div className="lg:w-full md:w-full mx-auto">
       <form className="flex flex-wrap -m-2" action="https://formsubmit.co/2fc845d42716d1c5b554e3018b03050d" method="POST">
         <div className="p-2 w-1/2">

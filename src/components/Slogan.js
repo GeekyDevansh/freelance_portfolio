@@ -9,12 +9,10 @@ const Slogan = ({darkMode}) => {
 
     <div className={`w-[60%] flex flex-col justify-center items-center py-24 mx-auto h-full `} >
 
-        <motion.div initial={{opacity:0.8,x:"-20%"}} whileInView={{opacity:1,x:0}} transition={{ ease: "easeOut", duration: 2 }} className='font-arsenica font-semibold italic text-5xl text-left ' >
-        In the realm of creation,
+        <motion.div initial={{opacity:0, scale:0.8}} whileInView={{opacity:1, scale:1}} transition={{ ease: "easeOut", duration: 0.5 }} className='font-arsenica font-semibold md:text-8xl text-6xl text-center ' >
+        In the realm of creation, <br /> I am the architect of possibilities.
         </motion.div>
-        <motion.div initial={{opacity:0.8,x:"20%"}} whileInView={{opacity:1,x:0}} transition={{ ease: "easeOut", duration: 2 }} className='font-arsenica text-5xl text-right italic font-semibold ' >
-        I am the architect of possibilities.
-        </motion.div>
+        
     </div>
     </div>
     </>

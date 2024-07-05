@@ -15,6 +15,11 @@ module.exports = {
       arsenica: ["Arsenica","sans-serif"],
     },
     extend: {
+      backgroundImage: {
+        'wave-pattern': "url('/public/wave2.svg')",
+        'wave-pattern-dark': "url('/public/wave4.svg')",
+        'dp': "url('/public/dk.jpeg')",
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },

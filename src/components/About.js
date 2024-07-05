@@ -9,7 +9,7 @@ const About = ({darkMode}) => {
 
     <motion.span  initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut'}} className={` ${darkMode?"text-white":"text-black"} tracking-widest md:text-5xl text-4xl w-[90%] text-center`} >
+        transition={{duration:1,ease:'easeOut'}} className={` ${darkMode?"text-white":"text-black"} tracking-widest md:text-5xl text-4xl w-[90%] text-center pt-16 `} >
         A LITTLE ABOUT ME
     </motion.span>
     <div className=''>

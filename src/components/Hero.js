@@ -13,14 +13,14 @@ const Hero = ({darkMode}) => {
       <Boxes />
     
         
-        <motion.h1 initial={{opacity:0.8,x:"-20%"}} whileInView={{opacity:1,x:0}} transition={{ ease: "easeOut", duration: 2 }}  className={cn(`font-semibold md:text-7xl text-4xl tracking-widest ${darkMode?"text-white":"text-black"} relative z-20 font-arsenica`)}>
+        < motion.h1 initial={{ scale:0.5, opacity:0 }} whileInView={{scale:1, opacity:1}} transition={{ease: "easeOut", duration:0.8}}  className={cn(`font-semibold md:text-9xl text-7xl text-center w-[90%] md:w-full tracking-widest ${darkMode?"text-white":"text-black"} relative z-20 font-arsenica`)}>
         Devansh Khullar
       </motion.h1>
-      <motion.h2 initial={{opacity:0.8,x:"20%"}} whileInView={{opacity:1,x:0}} transition={{ ease: "easeOut", duration: 2 }}  className={`text-center mt-2 ${darkMode?"text-white":"text-black"} relative z-20 font-dmsans md:text-8xl text-5xl tracking-widest `}>
+      {/* <motion.h2 initial={{opacity:0.8,x:"20%"}} whileInView={{opacity:1,x:0}} transition={{ ease: "easeOut", duration: 2 }}  className={`text-center mt-2 ${darkMode?"text-white":"text-black"} relative z-20 font-dmsans md:text-8xl text-5xl tracking-widest `}>
         PORTFOLIO
-      </motion.h2>
+      </motion.h2> */}
         
-       <motion.div initial={{opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1}} transition={{ ease: "easeOut", duration: 2 }}  className={`text-center mt-2 ${darkMode?"text-white":"text-black"} relative z-20 font-dmsans md:text-lg text-base tracking-wider underline decoration-1 underline-offset-8`} >Web Developer and UI/UX</motion.div>
+       {/* <motion.div initial={{opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1}} transition={{ ease: "easeOut", duration: 2 }}  className={`text-center mt-2 ${darkMode?"text-white":"text-black"} relative z-20 font-dmsans md:text-lg text-base tracking-wider underline decoration-1 underline-offset-8`} >Web Developer and UI/UX</motion.div> */}
 
      
       </div>
