@@ -126,9 +126,11 @@ const MatchMyService = () => {
             initial={{ opacity: 0, y: "80%" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className={`py-2 px-4 shadow-md no-underline border-2 ${
-              darkMode ? "border-white" : "border-black"
-            } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}
+            className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}
           >
             HTML
           </motion.div>
@@ -136,9 +138,11 @@ const MatchMyService = () => {
             initial={{ opacity: 0, y: "80%" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-            className={`py-2 px-4 shadow-md no-underline border-2 ${
-              darkMode ? "border-white" : "border-black"
-            } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}
+            className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}
           >
             CSS
           </motion.div>
@@ -146,9 +150,11 @@ const MatchMyService = () => {
             initial={{ opacity: 0, y: "80%" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-            className={`py-2 px-4 shadow-md no-underline border-2 ${
-              darkMode ? "border-white" : "border-black"
-            } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}
+            className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}
           >
             JavaScript
           </motion.div>
@@ -156,9 +162,11 @@ const MatchMyService = () => {
             initial={{ opacity: 0, y: "80%" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
-            className={`py-2 px-4 shadow-md no-underline border-2 ${
-              darkMode ? "border-white" : "border-black"
-            } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}
+            className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}
           >
             React.js
           </motion.div>
@@ -166,9 +174,11 @@ const MatchMyService = () => {
             initial={{ opacity: 0, y: "80%" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
-            className={`py-2 px-4 shadow-md no-underline border-2 ${
-              darkMode ? "border-white" : "border-black"
-            } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}
+            className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}
           >
             Framer Motion
           </motion.div>
@@ -176,9 +186,11 @@ const MatchMyService = () => {
             initial={{ opacity: 0, y: "80%" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 1 }}
-            className={`py-2 px-4 shadow-md no-underline border-2 ${
-              darkMode ? "border-white" : "border-black"
-            } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}
+            className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}
           >
             Vercel
           </motion.div>
@@ -186,9 +198,11 @@ const MatchMyService = () => {
             initial={{ opacity: 0, y: "80%" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 1.2 }}
-            className={`py-2 px-4 shadow-md no-underline border-2 ${
-              darkMode ? "border-white" : "border-black"
-            } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}
+            className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}
           >
             TailwindCSS
           </motion.div>
@@ -196,9 +210,11 @@ const MatchMyService = () => {
             initial={{ opacity: 0, y: "80%" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 1.4 }}
-            className={`py-2 px-4 shadow-md no-underline border-2 ${
-              darkMode ? "border-white" : "border-black"
-            } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}
+            className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}
           >
             Firebase
           </motion.div>
@@ -216,7 +232,7 @@ const MatchMyService = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="font-dmsans font-medium md:w-1/2 w-3/4 mx-auto md:text-xl text-lg mt-12"
+          className=" font-dmsans font-medium text-center md:w-1/2 w-3/4 mx-auto md:text-xl text-lg mt-12"
         >
           MatchMyService is a web-based platform that connects service seekers
           with service providers. Its intuitive interface and bidding system

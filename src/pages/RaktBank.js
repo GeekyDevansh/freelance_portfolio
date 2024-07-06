@@ -39,7 +39,7 @@ const RaktBank = () => {
         <motion.div initial={{opacity:0,x:"-30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}}>RaktBank</motion.div>
         <motion.a
          initial={{opacity:0,x:"30%"}} whileInView={{opacity:1,x:0}} transition={{duration:2,ease:'easeOut'}}
-          className={`font-dmsans font-medium text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${darkMode?"shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white":"shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "} rounded-xl `}
+          className={`font-arsenica font-semibold text-lg border-2  active:translate-x-[2px] active:translate-y-[2px] px-4 py-2 ${darkMode?"shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white":"shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "} rounded-xl `}
           href="https://raktbank.netlify.app/"
           target="_blank"
           rel="noreferrer noopener"
@@ -66,25 +66,53 @@ const RaktBank = () => {
         <div className="my-16 flex flex-wrap md:flex-nowrap gap-3 md:gap-0 justify-center items-center " >
         <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.2}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>HTML</motion.div>
+        transition={{duration:1,ease:'easeOut',delay:0.2}}  className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}>HTML</motion.div>
         <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.4}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>CSS</motion.div>
+        transition={{duration:1,ease:'easeOut',delay:0.4}}  className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}>CSS</motion.div>
         <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.6}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>JavaScript</motion.div>
+        transition={{duration:1,ease:'easeOut',delay:0.6}}  className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}>JavaScript</motion.div>
         <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:0.8}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>React.js</motion.div>
+        transition={{duration:1,ease:'easeOut',delay:0.8}}  className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}>React.js</motion.div>
         <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Netlify</motion.div>
+        transition={{duration:1,ease:'easeOut',delay:1}}  className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}>Netlify</motion.div>
         <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1.2}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Google Forms</motion.div>
+        transition={{duration:1,ease:'easeOut',delay:1.2}}  className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}>Google Forms</motion.div>
         <motion.div initial={{opacity:0,y:"80%"}}
         whileInView={{opacity:1,y:0}}
-        transition={{duration:1,ease:'easeOut',delay:1.4}} className={`py-2 px-4 shadow-md no-underline border-2 ${darkMode?"border-white":"border-black" } font-dmsans font-semibold text-sm btn-primary focus:outline-none active:shadow-none mr-2`}>Firebase</motion.div>
+        transition={{duration:1,ease:'easeOut',delay:1.4}}  className={`py-2 px-4 rounded-xl border-2 ${
+              darkMode
+                ? "shadow-[4px_4px_0_#ffffff] active:shadow-[2px_2px_0_#ffffff] border-white"
+                : "shadow-[4px_4px_0_#000000] active:shadow-[2px_2px_0_#000000] border-black "
+            } font-dmsans font-semibold text-sm  mr-2`}>Firebase</motion.div>
         </div>
 
         <motion.div initial={{y:"80%"}}
@@ -94,7 +122,7 @@ const RaktBank = () => {
         </motion.div>
         <motion.p initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:1,ease:'easeOut'}} className="font-dmsans md:w-1/2 w-3/4 font-medium mx-auto md:text-xl text-lg mt-12" >RaktBank is an accessible online portal tailored for people with dyslexia, facilitating seamless connections between blood donors and patients. Its user-friendly design ensures a smooth experience for both contributors and recipients in the vital process of blood donation.</motion.p>
+        transition={{duration:1,ease:'easeOut'}} className="font-dmsans md:w-1/2 w-3/4 font-medium text-center mx-auto md:text-xl text-lg mt-12" >RaktBank is an accessible online portal tailored for people with dyslexia, facilitating seamless connections between blood donors and patients. Its user-friendly design ensures a smooth experience for both contributors and recipients in the vital process of blood donation.</motion.p>
 
         <motion.div initial={{y:"80%"}}
         whileInView={{y:0}}

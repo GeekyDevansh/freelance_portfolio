@@ -57,7 +57,7 @@ const Projects = ({darkMode}) => {
             <div className='text-2xl' >&#183;</div>
             <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className={`hover:border-b-2 ${darkMode?"border-white":"border-black"} cursor-pointer flex justify-center items-center gap-1`} href='/vkiwitech' target='_blank' rel='noreferrer noopener' >vKiwiTech <MdOutlineArrowOutward size={24} /> </motion.a>
             <div className='text-2xl' >&#183;</div>
-            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className={`hover:border-b-2 ${darkMode?"border-white":"border-black"} cursor-pointer flex justify-center items-center gap-1`} href='/vkiwitech' target='_blank' rel='noreferrer noopener' >Ritajwll <MdOutlineArrowOutward size={24} /> </motion.a>
+            <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className={`hover:border-b-2 ${darkMode?"border-white":"border-black"} cursor-pointer flex justify-center items-center gap-1`} href='/ritajwll' target='_blank' rel='noreferrer noopener' >Ritajwll <MdOutlineArrowOutward size={24} /> </motion.a>
             <div className='text-2xl'  > &#183; </div>
             <motion.a initial={{opacity:0,x:"-10%"}} whileInView={{opacity:1,x:0}} transition={{duration:2}} className={`hover:border-b-2 ${darkMode?"border-white":"border-black"} cursor-pointer flex justify-center items-center gap-1`} href='/modaonlineshopping' target='_blank' rel='noreferrer noopener'  >Moda Online Shopping <MdOutlineArrowOutward size={24} /> </motion.a>
             <div className='text-2xl'  > &#183; </div>

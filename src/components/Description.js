@@ -28,7 +28,7 @@ const Description = ({ darkMode }) => {
           </div>
           <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}} className={` mx-auto md:ml-10 md:py-20 pt-5 w-[90%] md:w-auto `}>
             <div className="bg-white px-5 pt-5 pb-16 drop-shadow-2xl border">
-              <div className="rounded-2xl bg-cover md:w-96 w-full h-60 md:h-96 bg-dp bg-no-repeat bg-center border grayscale hover:grayscale-0 "></div>
+              <div className="rounded-2xl bg-cover md:w-96 w-full h-80 md:h-96 bg-dp bg-no-repeat bg-center border grayscale hover:grayscale-0 "></div>
             </div>
           </motion.div>
         </div>
